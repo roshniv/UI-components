@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactComponentSkeleton from '../.';
-import i18nNoop from 'ar-i18n-noop';
 
 React.render(
 	const styles = {

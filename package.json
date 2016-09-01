@@ -1,123 +1,61 @@
 {
-  "_args": [
-    [
-      "@epl/epl-components",
-      "/Users/Roshni/Directi/rampspot-ui"
-    ]
-  ],
-  "_from": "@epl/epl-components@*",
-  "_id": "@epl/epl-components@0.0.3",
-  "_inCache": true,
-  "_installable": true,
-  "_location": "/@epl/epl-components",
-  "_nodeVersion": "5.0.0",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/epl-components-0.0.3.tgz_1458593904937_0.40984470723196864"
+  "name": "UI-components",
+  "version": "1.0.0",
+  "description": "Library for UI-components",
+  "scripts": {
+    "start": "node server.js",
+    "deploy": "NODE_ENV=Production webpack --progress --colors -p",
+    "build": "webpack",
+    "dev": "webpack-dev-server",
+    "staging": "NODE_ENV=Production webpack --progress --colors -p"
   },
-  "_npmUser": {
-    "email": "roshni.valecha22@gmail.com",
-    "name": "epl"
-  },
-  "_npmVersion": "3.3.9",
-  "_phantomChildren": {},
-  "_requested": {
-    "name": "@epl/epl-components",
-    "raw": "@epl/epl-components",
-    "rawSpec": "",
-    "scope": "@epl",
-    "spec": "*",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/@epl/epl-components/-/epl-components-0.0.3.tgz",
-  "_shasum": "3537c715c4c8a9dfd5a8fa766d959b44361c589a",
-  "_shrinkwrap": null,
-  "_spec": "@epl/epl-components",
-  "_where": "/Users/Roshni/Directi/rampspot-ui",
-  "author": {
-    "email": "roshni.valecha22@gmail.com"
-  },
-  "dependencies": {
-    "react-bootstrap": "^0.28.3"
-  },
-  "description": "EPL UI components <roshni.valecha22@gmail.com>",
-  "devDependencies": {
-    "babel-core": "^6.1.2",
-    "babel-eslint": "^4.0.5",
-    "babel-jest": "^5.3.0",
-    "babel-loader": "^6.0.1",
-    "babel-preset-es2015": "^6.1.2",
-    "babel-preset-react": "^6.1.2",
-    "babel-preset-stage-1": "^6.3.13",
-    "eslint": "^0.24.1",
-    "eslint-plugin-react": "^3.2.0",
-    "jest-cli": "^0.6.1",
-    "npm-install-webpack-plugin": "^3.0.0",
-    "webpack": "^1.12.9"
-  },
-  "directories": {},
-  "dist": {
-    "shasum": "3537c715c4c8a9dfd5a8fa766d959b44361c589a",
-    "tarball": "http://registry.npmjs.org/@epl/epl-components/-/epl-components-0.0.3.tgz"
-  },
-  "gitHead": "6988f7c5b3ecb88e243f779ed7dc60b711a9464c",
-  "homepage": "https://github.com/akhan/rp-signup#readme",
+  "license": "MIT",
   "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testFileExtensions": [
+      "es6",
+      "js"
+    ],
     "moduleFileExtensions": [
       "js",
-      "jsx"
-    ],
-    "modulePathIgnorePatterns": [
-      "./dist/",
-      "./examples/",
-      "./node_modules/"
-    ],
-    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
-    "testDirectoryName": "tests",
-    "testFileExtensions": [
-      "js",
-      "jsx"
-    ],
-    "testPathIgnorePatterns": [
-      "./dist/",
-      "./examples/",
-      "./node_modules/",
-      "./src/"
-    ],
-    "unmockedModulePathPatterns": [
-      "./node_modules/lodash",
-      "./node_modules/react"
+      "json",
+      "es6"
     ]
   },
-  "keywords": [
-    "react",
-    "react-component",
-    "signup"
-  ],
-  "license": "ISC",
-  "main": "dist/Signup.js",
-  "maintainers": [
-    {
-      "name": "epl",
-      "email": "roshni.valecha22@gmail.com"
-    }
-  ],
-  "name": "@epl/epl-components",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/roshniv/UI-components/upload/singupComponent"
+  "devDependencies": {
+    "babel": "^6.3.13",
+    "babel-core": "^6.0.0",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^6.0.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-1": "^6.3.13",
+    "react-hot-loader": "^1.3.0",
+    "body-parser": "^1.14.1",
+    "bower": "^1.7.6",
+    "css-loader": "^0.23.1",
+    "exports-loader": "^0.6.2",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "history": "1.13.x",
+    "imports-loader": "^0.6.5",
+    "install": "^0.4.1",
+    "json-loader": "^0.5.4",
+    "npm-install-webpack-plugin": "^3.0.0",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.5",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.12.1",
+    "webpack-merge": "^0.8.3"
   },
-  "scripts": {
-    "build": "webpack",
-    "deploy": "NODE_ENV=Production webpack --progress --colors -p",
-    "lint": "eslint -c .eslintrc .",
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "0.0.3"
+  "dependencies": {
+    "flux": "^2.0.3",
+    "react": "^0.14.7",
+    "react-bootstrap": "^0.28.3",
+    "react-dom": "^0.14.2",
+    "react-motion": "^0.4.1",
+    "react-router": "1.0.2",
+    "request": "^2.74.0"
+  }
 }
