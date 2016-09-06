@@ -1,0 +1,32 @@
+.alert {
+    text-align: center;
+}
+
+.alert-success p {
+    color: #58bc66;
+}
+
+.alert-danger p {
+	color: #db4923;
+}
+
+.alert-warning p {
+	color: #faebcc;
+}
+
+.alert-info p {
+	color: #31708f;
+}
+
+.alert-success, .alert-danger, .alert-warning, .alert-info {
+	background-color: transparent;
+	border: none;
+}
+
+.alert p {
+	display: inline-block;
+    font-size: 25px;
+    font-family: ProximaNova-Light;
+    vertical-align: 3px;
+    padding: 0 10px;
+}
