@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Encryption from './Encryption';
+import Encryption from '../utils/Encryption';
 import { Input, Button } from 'react-bootstrap/lib';
 
 class Signup extends React.Component {

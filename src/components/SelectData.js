@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class CopyReferralLink extends React.Component {
+export default class SelectData extends React.Component {
 
 	render() {
 		
